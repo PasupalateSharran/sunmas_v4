@@ -1,0 +1,37 @@
+<%- include('partials/header') %>
+<body>
+   <%- include('partials/navbar') %>
+   <!-- Login Box -->
+   <div class="login-container" id="loginContainer">
+    <div class="login-screen">
+       <div class="login-screen__content">
+          <form class="login" id="loginForm" action="/login" method="post">
+             <div class="logo">
+                
+             </div>
+             <div class="login__field">
+                <i class="login__icon fas fa-user"></i>
+                <input type="text" class="login__input" placeholder="User name" name="name" id="username">
+             </div>
+             <div class="login__field">
+                <i class="login__icon fas fa-lock"></i>
+                <input type="password" class="login__input" placeholder="Password" name="password" id="password">
+             </div>
+             <button type="submit" class="button login__submit">
+                <span class="button__text">Log In Now</span>
+                <i class="button__icon fas fa-chevron-right"></i>
+             </button>
+          </form>
+          <!-- Error container -->
+          <div id="errorContainer" style="display: none;"></div>
+       </div>
+       <div class="login-screen__background">
+          <span class="login-screen__background__shape login-screen__background__shape4"></span>
+          <span class="login-screen__background__shape login-screen__background__shape3"></span>
+          <span class="login-screen__background__shape login-screen__background__shape2"></span>
+          <span class="login-screen__background__shape login-screen__background__shape1"></span>
+       </div>
+    </div>
+ </div>
+ <!-- Login Box-end -->
+    <%- include('partials/footer') %>

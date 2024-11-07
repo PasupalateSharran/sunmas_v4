@@ -1,0 +1,117 @@
+body,
+body.boxed-wrapper .page-wrapper,
+.why-choose-one__right:before,
+.tabs-content__inner {
+    background-color: #0d031e;
+    color: #a09baa;
+}
+
+
+
+.main-menu .main-menu__list>li>a,
+.stricky-header .main-menu__list>li>a,
+.get-to-know__progress-title,
+.section-title__title,
+.project-filter.style1 li:hover .filter-text,
+.project-filter.style1 li.active .filter-text,
+.project-filter.style1 li:hover .count,
+.project-filter.style1 li.active .count,
+.why-choose-one__points li .text p,
+.team-one__name,
+.team-one__hover-name,
+.team-one__social a,
+.financial-advice__tab-box .tab-buttons .tab-btn.active-btn span,
+.tabs-content__points li .text h4,
+.tabs-content__experience-title,
+.financial-advice__bottom-text a,
+.blog-one__title>a {
+    color: #ffffff;
+}
+
+.team-one__social a,
+.financial-advice__tab-box .tab-buttons .tab-btn span:before {
+    background: #0d031e;
+}
+
+.team-one__content,
+.team-one__hover,
+.testimonial-one,
+.financial-advice,
+.tabs-content__points li .icon,
+.blog-one__content {
+    background: #04000b;
+}
+
+.get-to-know__img:before {
+    background: #120528;
+}
+
+.section-title__tagline,
+.project-filter.style1 li .filter-text,
+.financial-advice__bottom-text,
+.blog-one__meta li a {
+    color: #a09baa;
+}
+
+.get-to-know__progress .count-text,
+.financial-advice__tab-box .tab-buttons .tab-btn.active-btn span {
+    background: #6222cc;
+}
+
+.get-to-know__progress .bar {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.get-to-know__person-img {
+    border: 5px solid rgba(255, 255, 255, 0.1);
+}
+
+.get-to-know-big-text {
+    color: rgba(255, 255, 255, 0.02);
+}
+
+.brand-one {
+    border-bottom: 1px solid #261d35;
+}
+
+.team-one__carousel.owl-carousel .owl-dots .owl-dot {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.testimonial-one .custom-nav .owl-prev {
+    color: #ffffff;
+    background: #0d031e;
+}
+
+.testimonial-one .custom-nav .owl-next {
+    color: #ffffff;
+    background: #0d031e;
+}
+
+.testimonial-one__single {
+    background: #0d031e;
+}
+
+.testimonial-one__client-name {
+    color: #ffffff;
+}
+
+.tabs-content__points li {
+    border-bottom: 1px solid #261d35;
+}
+
+.tabs-content__right:before {
+    background-color: #261d35;
+}
+
+.tabs-content__experience-btn {
+    color: #6222cc;
+}
+
+.tabs-content__experience-btn:hover {
+    color: #ffffff;
+}
+
+.financial-advice__bottom {
+    border-top: 1px solid #1c1822;
+}

@@ -1,0 +1,71 @@
+<%- include('partials/header') %>
+
+<body>
+    <%- include('partials/navbar') %>
+
+    <!-- main-area -->
+    <main class="bg-blue">
+        <div style="background-color: #114ffa; margin-top: 10%; padding: 10px 20px;">
+            <!-- Admin-Navbar  -->
+            <ul class="nav nav-tabs" style="background-color: #444958; margin: 0px 237px; border-top-right-radius: 5px; border-top-left-radius: 5px;">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" id="home-tab">Homes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="about-tab">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="generalIndustries-tab">General Industries</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="oilAndGas-tab">Oil and Gas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="ourBusiness-tab">Our Business</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="wasteWaterTreatment-tab">Waste Water Treatment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="contact-tab">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="techSecAEditor-tab">TechA Section</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="techSecBEditor-tab">TechB Section</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="techSecCEditor-tab">TechC Section</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="techSecDEditor-tab">TechD Section</a>
+                </li>
+            </ul>
+            <!-- Admin-Navbar Ends  -->
+            <div class="editorArea" style="background-color: #444958;">
+                <!-- Home Area  -->
+                <%- include('partials/homeEditor') %>
+                <!-- AboutUs Area  -->
+                <%- include('partials/aboutUsEditor') %>
+                <!-- GeneralIndustries Area  -->
+                <%- include('partials/generalIndustriesEditor') %>
+                <!-- Oil And Gas  -->
+                <%- include('partials/oilAndGasEditor') %>
+                <!-- Our Business Area  -->
+                <%- include('partials/ourBusinessEditor') %>
+                <!-- WasteWaterTreatment Area  -->
+                <%- include('partials/wasteWaterTreatmentEditor') %>
+                <!-- Contact Us Area  -->
+                <%- include('partials/contactUsEditor') %>
+                <!-- TechSec Area  -->
+                <%- include('partials/techSecAEditor') %>
+                <%- include('partials/techSecBEditor') %>
+                <%- include('partials/techSecCEditor') %>
+                <%- include('partials/techSecDEditor') %>
+            </div>
+        </div>
+    </main>
+
+    <%- include('partials/footer') %>
+</body>

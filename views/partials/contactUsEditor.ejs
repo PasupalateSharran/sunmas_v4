@@ -1,0 +1,59 @@
+<div class="contactUs" id="contact" style="display:none;">
+    <div class="headQuaters">
+        <div class="contact-one__right wow slideInRight slide2" data-wow-delay="100ms"
+            data-wow-duration="2500ms">
+            <form action="admin/contact/contactHeadQuarters" method="post" class="contact-one__right-form">
+                <label for="slide2-title">HeadQuaters</label>
+                <input type="text" id="slide2-title" placeholder="Your name" name="name" value="<%- contactHeadQuaters.name %>">
+                <textarea name="address" placeholder="Write a message"><%- contactHeadQuaters.address %></textarea>
+                <input type="text" id="slide2-title" placeholder="Your name" name="country" value="<%- contactHeadQuaters.country %>">
+                <input type="text" id="slide2-title" placeholder="Your name" name="Email" value="<%- contactHeadQuaters.Email %>">
+                <input type="text" id="slide2-title" placeholder="Your name" name="phnNo" value="<%- contactHeadQuaters.phnNo %>">
+                <button type="submit" class="thm-btn contact-one__btn">Update</button>
+            </form>
+        </div>
+    </div>
+    <div class="GroupCompanies">
+        <div class="contact-one__right wow slideInRight slide2" data-wow-delay="100ms"
+            data-wow-duration="2500ms">
+            <form action="admin/contact/contactGroupCompanies/box1" method="post"
+                class="contact-one__right-form">
+                <label for="slide2-title">Company 1</label>
+                <input type="text" id="slide2-title" placeholder="Your name" name="name" value="<%- contactGroupCompanies.box1.name %>">
+                <textarea name="address" placeholder="Write a message"><%- contactGroupCompanies.box1.address %></textarea>
+                <input type="text" id="slide2-title" placeholder="Your name" name="email" value="<%- contactGroupCompanies.box1.Email %>">
+                <input type="text" id="slide2-title" placeholder="Your name" name="city" value="<%- contactGroupCompanies.box1.city %>">
+                <input type="text" id="slide2-title" placeholder="Your name" name="country" value="<%- contactGroupCompanies.box1.country %>">
+
+
+                <button type="submit" class="thm-btn contact-one__btn">Update</button>
+            </form>
+        </div>
+        <div class="contact-one__right wow slideInRight slide2" data-wow-delay="100ms"
+            data-wow-duration="2500ms">
+            <form action="admin/contact/contactGroupCompanies/box2" method="post"
+                class="contact-one__right-form">
+                <label for="slide2-title">Company 2</label>
+                <input type="text" id="slide2-title" placeholder="Your name" name="name" value="<%- contactGroupCompanies.box2.name %>">
+                <textarea name="address" placeholder="Write a message"><%- contactGroupCompanies.box2.address %></textarea>
+                <input type="text" id="slide2-title" placeholder="Your name" name="city" value="<%- contactGroupCompanies.box2.city %>">
+                <input type="text" id="slide2-title" placeholder="Your name" name="country" value="<%- contactGroupCompanies.box2.country %>">
+                <input type="text" id="slide2-title" placeholder="Your name" name="email" value="<%- contactGroupCompanies.box1.Email %>">
+                <button type="submit" class="thm-btn contact-one__btn">Update</button>
+            </form>
+        </div>
+        <div class="contact-one__right wow slideInRight slide2" data-wow-delay="100ms"
+            data-wow-duration="2500ms">
+            <form action="admin/contact/contactGroupCompanies/box3" method="post"
+                class="contact-one__right-form">
+                <label for="slide2-title">Company 3</label>
+                <input type="text" id="slide2-title" placeholder="Your name" name="name" value="<%- contactGroupCompanies.box3.name %>">
+                <textarea name="address" placeholder="Write a message"><%- contactGroupCompanies.box3.address %></textarea>
+                <input type="text" id="slide2-title" placeholder="Your name" name="city" value="<%- contactGroupCompanies.box3.city %>">
+                <input type="text" id="slide2-title" placeholder="Your name" name="country" value="<%- contactGroupCompanies.box1.country %>">
+                <input type="text" id="slide2-title" placeholder="Your name" name="email" value="<%- contactGroupCompanies.box1.Email %>">
+                <button type="submit" class="thm-btn contact-one__btn">Update</button>
+            </form>
+        </div>
+    </div>
+</div>

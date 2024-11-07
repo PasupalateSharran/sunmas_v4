@@ -1,0 +1,138 @@
+<div class="preloader">
+    <img class="preloader__image" width="60" src="assets/images/loader.png" alt="" />
+</div>
+<!-- /.preloader -->
+<div class="page-wrapper">
+    <header class="main-header main-header-two clearfix">
+        <nav class="main-menu main-menu-two clearfix">
+            <div class="main-menu-wrapper clearfix">
+                <div class="main-menu-wrapper__left">
+                    <div class="main-menu-wrapper__logo">
+                        <a href=""><img src="assets/images/resources/logo-1.png" alt=""></a>
+                    </div>
+                    <div class="main-menu-wrapper__main-menu">
+                        <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                        <ul class="main-menu__list" id="navbar">
+                            <li class="dropdown megamenu">
+                                <a href="/">Home</a>
+                            </li>
+                            <li><a href="/aboutus">About Us</a></li>
+                            <li class="dropdown">
+                                <a href="/ourbusiness">Our Business</a>
+                                <ul>
+                                    <li><a href="/wastewatertreatment">Water and Wastewater treatment</a></li>
+                                    <li><a href="/oilandgas">Oil & Gas</a></li>
+                                    <li><a href="/genralindustries">General Industries</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/technologies">Technology</a></li>
+                            <li><a href="/project">Projects</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-menu-wrapper__right">
+                    <div class="main-menu-wrapper__call">
+                        <div class="main-menu-wrapper__call-icon">
+                            <span class="icon-chatting"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="stricky-header stricked-menu main-menu main-menu-two">
+        <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
+    </div><!-- /.stricky-header -->
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+            <div class="logo-box">
+                <a href="/index" aria-label="logo image"><img src="assets/images/resources/logo-1.png" width="155"
+                        alt="" /></a>
+            </div>
+            <!-- /.logo-box -->
+            <!-- <div>
+                <ul>
+                    <li class="dropdown current megamenu">
+                        <a href="/index">Home </a>
+                    </li>
+                    <li><a href="/aboutus">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="/ourbusiness">Our Business</a>
+                        <ul>
+                            <li><a href="/wastewatertreatment">Water and Wastewater treatment</a></li>
+                            <li><a href="/oilandgas">Oil & Gas</a></li>
+                            <li><a href="/genralindustries">General Industries</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="/project">Projects</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
+            </div> -->
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:needhelp@packageName__.com">sales@sunmasgroup.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:6598509721">+65 63223414</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__top">
+                <div class="mobile-nav__social">
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-facebook-square"></a>
+                    <a href="#" class="fab fa-pinterest-p"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div><!-- /.mobile-nav__social -->
+            </div><!-- /.mobile-nav__top -->
+
+
+
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+    <script>
+        // Function to set the clicked menu item as the active item
+        function setActiveMenuItem(route) {
+          const menuItems = document.querySelectorAll('#navbar a');
+      
+          menuItems.forEach(item => {
+            if (item.getAttribute('href') === route) {
+              item.parentElement.classList.add('current', 'megamenu');
+            } else {
+              item.parentElement.classList.remove('current', 'megamenu');
+            }
+          });
+        }
+      
+        // Set the default active menu item based on the saved route or Home
+        window.onload = function () {
+          const savedRoute = localStorage.getItem('activeRoute') || '/index';
+          setActiveMenuItem(savedRoute);
+        };
+      
+        // Attach the onClick event to each menu item
+        document.querySelectorAll('#navbar a').forEach(item => {
+          item.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            const route = this.getAttribute('href');
+            localStorage.setItem('activeRoute', route); // Save the clicked route to localStorage
+            setActiveMenuItem(route);
+            window.location.href = route; // Redirect to the clicked page
+          });
+        });
+      </script>
+      
+      

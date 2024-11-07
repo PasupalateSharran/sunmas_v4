@@ -1,0 +1,217 @@
+<%- include('partials/header') %>
+
+
+<body>
+    <%- include('partials/navbar') %>
+
+        <!--Main Slider Start-->
+        <section class="main-slider-two">
+            <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
+    "effect": "fade",
+     "pagination": {
+        "el": "#main-slider-pagination",
+        "type": "bullets",
+        "clickable": true
+      },
+    "navigation": {
+        "nextEl": "#main-slider__swiper-button-next",
+        "prevEl": "#main-slider__swiper-button-prev"
+    },
+    "autoplay": {
+        "delay": 5000
+    }}'>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="image-layer"
+                            style="background-image: url(assets/images/backgrounds/main-slider-two-bg.png);">
+                        </div>
+                        <!-- /.image-layer -->
+                        <div class="main-slider-two-img-1"><img src="assets/images/resources/slide01.webp"
+                                alt=""></div>
+                        <div class="main-slider-two-shape-1"></div>
+                        <div class="main-slider-two-shape-2"></div>
+                        <div class="main-slider-two-shape-3"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="main-slider-two__content">
+                                        <p>Energizing the Future</p>
+                                        <h2><%- indexSlider.box1.title %></h2>
+                                        <p><%- indexSlider.box1.content %></p>
+                                        <a href="/aboutus" class="thm-btn">Discover More</a>
+                                        <div class="main-slider-two-arrow">
+                                            <img class="float-bob-x"
+                                                src="assets/images/shapes/main-slider-two-arrow.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-layer"
+                            style="background-image: url(assets/images/backgrounds/main-slider-two-bg.png);">
+                        </div>
+                        <!-- /.image-layer -->
+                        <div class="main-slider-two-img-1"><img src="assets/images/resources/slide02.webp"
+                                alt=""></div>
+                        <div class="main-slider-two-shape-1"></div>
+                        <div class="main-slider-two-shape-2"></div>
+                        <div class="main-slider-two-shape-3"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="main-slider-two__content">
+                                        <p><%- indexSlider.box2.title %></p>
+                                        <h2><%- indexSlider.box2.content %></h2>
+                                        <a href="/aboutus" class="thm-btn">Discover More</a>
+                                        <div class="main-slider-two-arrow">
+                                            <img class="float-bob-x"
+                                                src="assets/images/shapes/main-slider-two-arrow.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="image-layer"
+                            style="background-image: url(assets/images/backgrounds/main-slider-two-bg.png);">
+                        </div>
+                        <!-- /.image-layer -->
+                        <div class="main-slider-two-img-1"><img src="assets/images/resources/main-slider-two-img-1.png"
+                                alt=""></div>
+                        <div class="main-slider-two-shape-1"></div>
+                        <div class="main-slider-two-shape-2"></div>
+                        <div class="main-slider-two-shape-3"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="main-slider-two__content">
+                                        <p><%- indexSlider.box3.title %></p>
+                                        <h2><%- indexSlider.box3.content %></h2>
+                                        <a href="/aboutus" class="thm-btn">Discover More</a>
+                                        <div class="main-slider-two-arrow">
+                                            <img class="float-bob-x"
+                                                src="assets/images/shapes/main-slider-two-arrow.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-pagination" id="main-slider-pagination"></div>
+            </div>
+        </section>
+        <!--Main Slider End-->
+
+        <!--Services Two Start-->
+        <section class="services-two">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="100ms">
+                        <!--Services Two Single-->
+                        <div class="services-two__single">
+                            <div class="services-two__icon">
+                                <span class="icon-online-shopping"></span>
+                            </div>
+                            <h3 class="services-two__title"><a href="/wastewatertreatment"><%- indexServices.box1.title %></a></h3>
+                            <p class="services-two__text"><%- indexServices.box1.content %></p>
+                            <a class="services-two__arrow" href="/wastewatertreatment"><span
+                                    class="icon-right-arrow"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="200ms">
+                        <!--Services Two Single-->
+                        <div class="services-two__single">
+                            <div class="services-two__icon">
+                                <span class="icon-growth"></span>
+                            </div>
+                            <h3 class="services-two__title"><a href="/oilandgas"><%- indexServices.box2.title %></a>
+                            </h3>
+                            <p class="services-two__text"><%- indexServices.box2.content %></p>
+                            <a class="services-two__arrow" href="/oilandgas"><span
+                                    class="icon-right-arrow"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="300ms">
+                        <!--Services Two Single-->
+                        <div class="services-two__single">
+                            <div class="services-two__icon">
+                                <span class="icon-webpage"></span>
+                            </div>
+                            <h3 class="services-two__title"><a href="/genralindustries"><%- indexServices.box3.title %></a></h3>
+                            <p class="services-two__text"><%- indexServices.box3.content %></p>
+                            <a class="services-two__arrow" href="/genralindustries"><span
+                                    class="icon-right-arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Services Two End-->
+
+
+
+        <!--Qutiiz Ready Two-->
+        <section class="qutiiz-ready-two">
+            <div class="qutiiz-ready-two-bg-box">
+                <div class="qutiiz-ready-two-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
+                    style="background-image: url(assets/images/backgrounds/aboutbg.webp)"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="qutiiz-ready-two__inner">
+                            <h2 class="qutiiz-ready-two__title">Find out now how Sunmas can assist you in achieving your goals for resource recovery and water!</h2>
+                            <a href="/contact" class="qutiiz-ready-two__btn thm-btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Qutiiz Ready End-->
+
+
+
+        <!--We Care Start-->
+        <section class="we-care">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="we-care__inner">
+                            <div class="we-care__img">
+                                <img src="assets/images/resources/we-care-img.jpg" alt="">
+                            </div>
+                            <div class="we-care__content">
+                                <h3 class="we-care__title"><%- indexWeCare.title %></h3>
+                                <p class="we-care__text"><%- indexWeCare.content %></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--We Care End-->
+
+
+
+
+
+
+
+                <!--Google Map Start-->
+                <!-- <section class="google-map">
+                    <h3>REACH OUR HEADQUARTERS <br> SUNMAS TECHNOLOGIES PTE LIMITED</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.736996100233!2d103.69831587007224!3d1.3339785586767683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0f8cf892777f%3A0x820bb5ca94c5c001!2s16D%20Enterprise%20Rd%2C%20Singapore%20627653!5e0!3m2!1sen!2sin!4v1719053008455!5m2!1sen!2sin"
+                        class="google-map__one" allowfullscreen></iframe>
+        
+                </section> -->
+                <!--Google Map End-->
+
+
+                <%- include('partials/footer') %>

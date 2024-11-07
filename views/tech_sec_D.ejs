@@ -1,0 +1,99 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+<!--Page Header Start-->
+<section class="page-header">
+    <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/page-header-bg4.webp)"></div>
+    <div class="page-header-border"></div>
+    <div class="page-header-border page-header-border-two"></div>
+    <div class="page-header-border page-header-border-three"></div>
+    <div class="page-header-border page-header-border-four"></div>
+    <div class="page-header-border page-header-border-five"></div>
+    <div class="page-header-border page-header-border-six"></div>
+    
+    <div class="page-header-shape-1"></div>
+    <div class="page-header-shape-2"></div>
+    <div class="page-header-shape-3"></div>
+    
+    <div class="container">
+        <div class="page-header__inner">
+            <h2><%= title %></h2>
+        </div>
+    </div>
+</section>
+<!--Page Header End-->
+
+<!--Service Details Start-->
+<section class="service-details">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-5">
+                <div class="service-details__sidebar">
+                    <div class="service-details__need-help">
+                        <div class="service-details__need-help-bg" style="background-image: url(assets/images/backgrounds/service-details-need-help-bg.jpg)"></div>
+                        <div class="service-details__need-help-icon">
+                            <span class="icon-chatting"></span>
+                        </div>
+                        <h2 class="service-details__need-help-title">Expert Quality <br> Solutions</h2>
+                    </div>
+                    <div class="service-details__download">
+                        <a href="/download-brochure" class="service-details__download-btn">Download our brochure</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-7">
+                <div class="service-details__right">
+                  \
+
+                    <!-- Manually adding techSecA content with original image paths -->
+                    <div class="service-details__content">
+                        <h2 class="service-details__title"><%= techSecD.box1.title %></h2>
+                        <div class="service-details__img"><img src="assets/images/resources/service-details-img-5.jpg" alt=""></div>
+                        <p class="service-details__text-1"><%= techSecD.box1.content %></p>
+                    </div>
+
+                    <div class="service-details__content">
+                        <h2 class="service-details__title"><%= techSecD.box2.title %></h2>
+                        <div class="service-details__img"><img src="assets/images/resources/service-details-img-5.jpg" alt=""></div>
+                        <p class="service-details__text-1"><%= techSecD.box2.content %></p>
+                    </div>
+
+                    <div class="service-details__content">
+                        <h2 class="service-details__title"><%= techSecD.box3.title %></h2>
+                        <div class="service-details__img"><img src="assets/images/resources/Recycle.webp" alt=""></div>
+                        <p class="service-details__text-1"><%= techSecD.box3.content %></p>
+                    </div>
+
+                    <div class="service-details__content">
+                        <h2 class="service-details__title"><%= techSecD.box4.title %></h2>
+                        <div class="service-details__img"><img src="assets/images/resources/desalination.webp" alt=""></div>
+                        <p class="service-details__text-1"><%= techSecD.box4.content %></p>
+                    </div>
+
+                    <div class="service-details__content">
+                        <h2 class="service-details__title"><%= techSecD.box5.title %></h2>
+                        <div class="service-details__img"><img src="assets/images/resources/sludgetreatment.webp" alt=""></div>
+                        <p class="service-details__text-1"><%= techSecD.box5.content %></p>
+                    </div>
+
+                    <div class="service-details__content">
+                        <h2 class="service-details__title"><%= techSecD.box6.title %></h2>
+                        <div class="service-details__img"><img src="assets/images/resources/industrialtreatment.webp" alt=""></div>
+                        <p class="service-details__text-1"><%= techSecD.box6.content %></p>
+                    </div>
+
+                    <div class="service-details__content">
+                        <h2 class="service-details__title"><%= techSecD.box7.title %></h2>
+                        <div class="service-details__img"><img src="assets/images/resources/oandm.webp" alt=""></div>
+                        <p class="service-details__text-1"><%= techSecD.box7.content %></p>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Service Details End-->
+
+<%- include('partials/footer') %>

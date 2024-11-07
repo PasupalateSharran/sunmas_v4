@@ -1,0 +1,48 @@
+<div class="aboutUs" id="about" style="display:none;">
+    <div class="Welcome">
+        <div class="contact-one__right wow slideInRight slide2" data-wow-delay="100ms" data-wow-duration="2500ms">
+            <form action="admin/aboutus/aboutUsWelcomeBox1" method="post" class="contact-one__right-form">
+                <label for="slide2-title">Welcome Box 1</label>
+                <input type="text" id="slide2-title" placeholder="Your name" name="title" value="<%- aboutUsWelcome.box1.title %>">
+                <textarea name="content" placeholder="Write a message"><%- aboutUsWelcome.box1.content %></textarea>
+                <button type="submit" class="thm-btn contact-one__btn">Update</button>
+            </form>
+        </div>
+        <div class="contact-one__right wow slideInRight slide2" data-wow-delay="100ms" data-wow-duration="2500ms">
+            <form action="admin/aboutus/aboutUsWelcomeBox2" method="post" class="contact-one__right-form">
+                <label for="slide2-title">Welcome Box 2</label>
+                <input type="text" id="slide2-title" placeholder="Your name" value="<%- aboutUsWelcome.box2.title %>" name="title">
+                <textarea name="content" placeholder="Write a message"><%- aboutUsWelcome.box2.content %></textarea>
+                <button type="submit" class="thm-btn contact-one__btn">Update</button>
+            </form>
+        </div>
+    </div>
+    <div class="whyChoose">
+        <div class="contact-one__right wow slideInRight slide2" data-wow-delay="100ms" data-wow-duration="2500ms">
+            <form action="admin/aboutus/aboutUsWhyChoose" method="post" class="contact-one__right-form">
+                <label for="slide2-title">Why Choose US</label>
+                <input type="text" id="slide2-title" placeholder="Your name" value="<%- aboutUsWhyChoose.title %>" name="title">
+                <textarea name="content" placeholder="Write a message"><%- aboutUsWhyChoose.content %></textarea>
+                <input type="text" id="slide2-title" placeholder="Your name" name="p1" value="<%- aboutUsWhyChoose.p1 %>">
+                <input type="text" id="slide2-title" placeholder="Your name" name="p2" value="<%- aboutUsWhyChoose.p2 %>">
+                <input type="text" id="slide2-title" placeholder="Your name" name="p3" value="<%- aboutUsWhyChoose.p3 %>">
+                <button type="submit" class="thm-btn contact-one__btn">Update</button>
+            </form>
+        </div>
+    </div>
+    <div class="knowUS">
+        <div class="contact-one__right wow slideInRight slide2" data-wow-delay="100ms" data-wow-duration="2500ms">
+            <form action="admin/aboutus/aboutUsKnowUs" method="post" class="contact-one__right-form">
+                <label for="slide2-title">Know US</label>
+                <input type="text" id="slide2-title" placeholder="Your name" name="title" value="<%- aboutUsKnowUs.title %>">
+                <textarea name="content1" placeholder="Write a message"><%- aboutUsKnowUs.content1 %></textarea>
+                <textarea name="content2" placeholder="Write a message"><%- aboutUsKnowUs.content2 %></textarea>
+                <input type="text" id="slide2-title" placeholder="Your name" name="p1" value="<%- aboutUsKnowUs.p1 %>">
+                <input type="text" id="slide2-title" placeholder="Your name" name="p2" value="<%- aboutUsKnowUs.p2 %>">
+                <input type="text" id="slide2-title" placeholder="Your name" name="p3" value="<%- aboutUsKnowUs.p3 %>">
+                <input type="text" id="slide2-title" placeholder="Your name" name="p4" value="<%- aboutUsKnowUs.p4 %>">
+                <button type="submit" class="thm-btn contact-one__btn">Update</button>
+            </form>
+        </div>
+    </div>
+</div>
